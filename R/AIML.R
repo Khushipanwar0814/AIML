@@ -7,6 +7,7 @@ aiml <- function(x){
   boxplot(x,col = "green")
   par(mfrow = c(1,1))
   data.frame(min = min(x),
+             sd = sd(x),
              median = median(x),
              max = max(x))
 }
